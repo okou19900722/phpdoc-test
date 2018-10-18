@@ -23,7 +23,7 @@
                             <goal>exec</goal>
                         </goals>
                         <configuration>
-                            <executable>${project.basedir}/phpdoc.bat</executable>
+                            <executable>${project.basedir}/phpdoc.sh</executable>
                         </configuration>
                     </execution>
                 </executions>
