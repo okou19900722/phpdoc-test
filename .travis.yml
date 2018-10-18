@@ -8,7 +8,7 @@ install:
   - sudo chmod 755 .travis.phpdoc.sh
 #  - phpdoc -d src/main/generated -t target/phpdoc --template="responsive-twig"
 #  - php bin/phpdoc
-  - vendor/bin/phpdoc
+#  - vendor/bin/phpdoc
 
 jobs:
   include:
