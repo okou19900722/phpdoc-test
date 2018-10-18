@@ -5,6 +5,7 @@ php:
 install:
   - composer require "phpdocumentor/phpdocumentor:2.8.5"
   - sudo apt-get install graphviz
+  - sudo chmod 755 .travis.phpdoc.sh
 
 jobs:
   include:
