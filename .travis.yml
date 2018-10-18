@@ -6,8 +6,7 @@ install:
   - composer require "phpdocumentor/phpdocumentor:2.8.5"
   - sudo apt-get install graphviz
   - sudo chmod 755 .travis.phpdoc.sh
-  - ll
-  - php vendor/bin/phpdoc
+  - phpdoc -d src/main/generated -t target/phpdoc --template="responsive-twig"
 
 jobs:
   include:
