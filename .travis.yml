@@ -2,7 +2,9 @@ language: java
 php:
   - nightly
 
-install: composer require "phpdocumentor/phpdocumentor:2.8.5"
+install:
+  - composer require "phpdocumentor/phpdocumentor:2.8.5"
+  - sudo apt-get install graphviz
 
 jobs:
   include:
