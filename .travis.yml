@@ -1,0 +1,12 @@
+language: java
+php:
+  - nightly
+
+install: composer require "phpdocumentor/phpdocumentor:2.8.5"
+
+jobs:
+  include:
+  - stage: test
+    name: "Oracle"
+    jdk: oraclejdk8
+    script: mvn -q clean verify -B
