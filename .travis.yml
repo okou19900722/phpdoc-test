@@ -6,7 +6,7 @@ install:
   - composer require "phpdocumentor/phpdocumentor:2.8.5"
   - sudo apt-get install graphviz
   - sudo chmod 755 .travis.phpdoc.sh
-  - aaaa = `pwd`
+  - aaaa=`pwd`
   - echo $aaaa
   - export PATH="$HOME/build/okou19900722/phpdoc-test/verdor/bin:$PATH"
   - echo $PATH
