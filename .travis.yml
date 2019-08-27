@@ -12,4 +12,4 @@ install:
 #  - php bin/phpdoc
 #  - vendor/bin/phpdoc
 
-script: phpdoc -d src/main/generated -t target/phpdoc --template="responsive-twig"
+script: ./vendor/bin/phpdoc -d src/main/generated -t target/phpdoc --template="responsive-twig"
