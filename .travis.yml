@@ -3,7 +3,7 @@ php:
   - nightly
 
 install:
-  - composer require "phpdocumentor/phpdocumentor:2.9.0"
+  - composer require "phpdocumentor/phpdocumentor:2.8.5"
   - sudo apt-get install graphviz
   - sudo chmod 755 .travis.phpdoc.sh
   - export PATH="`pwd`/vendor/bin:$PATH"
