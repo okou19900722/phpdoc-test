@@ -14,6 +14,4 @@ install:
 jobs:
   include:
   - stage: test
-    name: "openjdk8"
-    jdk: openjdk8
-    script: mvn -q clean verify -B
+    script: phpdoc -d src/main/generated -t target/phpdoc --template="responsive-twig"
