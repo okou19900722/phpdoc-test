@@ -4,7 +4,7 @@ php:
 
 install:
   - rm -rf `pwd`/vendor
-  - composer require "phpdocumentor/phpdocumentor:2.8.5"
+  - composer require "phpdocumentor/phpdocumentor:v3.0.0-alpha.4"
   - sudo apt-get install graphviz
 #  - sudo chmod 755 .travis.phpdoc.sh
 #  - export PATH="`pwd`/vendor/bin:$PATH"
