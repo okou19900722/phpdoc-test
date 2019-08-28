@@ -12,4 +12,9 @@ php:
 #  - php bin/phpdoc
 #  - vendor/bin/phpdoc
 
-script: php phpdoc.phar -q -d src/main/generated -t target/phpdoc --template="responsive-twig"
+jobs:
+  include:
+  - stage: test
+    name: "openjdk"
+    jdk: openjdk8
+    script: mvn -q clean verify -B
